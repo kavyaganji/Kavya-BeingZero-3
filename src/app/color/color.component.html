@@ -1,6 +1,8 @@
 <div class="container mt-5">
-<h2 class="bg-primary text-center">Showing colors from reqres.in</h2>
-<div *ngFor="let c of colors" style="text-align: center">
-<h1 [ngStyle]="{'color': blue }">{{c.name}}</h1>
-</div>
-</div>
+    <h2 class="bg-primary text-center">Showing colors from reqres.in</h2>
+    <div *ngFor="let c of colors.data">
+        <h1 class="text-center" [ngStyle]="{color: c.color}">
+            {{c.name}}
+        </h1>
+    </div>
+    </div>
