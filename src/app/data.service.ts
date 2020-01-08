@@ -13,4 +13,8 @@ export class DataService {
   {
     return this.http.get('https://restcountries.eu/rest/v2/all');
   }
+  getUsers()
+  {
+    return this.http.get('https://jsonplaceholder.typicode.com/users');
+  }
 }
